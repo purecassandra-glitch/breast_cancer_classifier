@@ -44,11 +44,11 @@ Can a simple machine learning model distinguish malignant from benign tumours us
 
 On the 114 test samples the model made 4 errors: 3 malignant cases classified as benign (false negatives) and 1 benign case classified as malignant (false positive).
 
-![Confusion matrix](figures/confusion_matrix.png)
+![Confusion matrix](confusion_matrix.png)
 
 The features with the largest coefficients included worst texture, radius error, worst symmetry and mean concave points (see `figures/top_features.png`). This shows what the model relies on in this dataset and does not show biological causation. Many features are strongly correlated, so individual coefficients should be read with caution.
 
-![Top features](figures/top_features.png)
+![Top features](top_features.png)
 
 ## Limitations
 
@@ -72,5 +72,5 @@ jupyter notebook breast_cancer_classifier.ipynb
 ## Files
 
 - `breast_cancer_classifier.ipynb`: the full analysis with outputs
-- `figures/`: saved plots
+- : saved plots
 - `requirements.txt`: Python dependencies
